@@ -66,5 +66,7 @@ public class VariableDemo {
 
         System.out.println("name = " + name);
 
+
+
     }
 }
