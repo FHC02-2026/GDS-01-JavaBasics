@@ -26,7 +26,45 @@ public class VariableDemo {
         String word = "Hallo Welt";
 
 
+        // variable ausgeben
+        System.out.println(a);
+        //sout + tab
+        System.out.println(c);
+        // soutv + tab
+        System.out.println("word = " + word);
 
+
+        System.out.println("wahr = " + wahr);
+
+
+        // wert abändern
+        a = 5;
+        System.out.println("a = " + a);
+
+        a = 5 + 4;
+        System.out.println("a = " + a);
+
+
+        a = a + 1;
+        System.out.println("a = " + a);
+
+        // long
+        long l = 8;
+
+        l = a;
+
+        // a = l; -> geht nicht, da long in int nicht platz findet
+
+
+        String number = "4";
+        number = number + 4;
+        System.out.println("number = " + number);
+
+        // String concatenation
+        String name = "Max";
+        name = name + " " + "Mustermann";
+
+        System.out.println("name = " + name);
 
     }
 }
