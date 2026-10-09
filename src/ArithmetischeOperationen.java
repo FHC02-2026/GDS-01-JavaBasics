@@ -31,5 +31,32 @@ public class ArithmetischeOperationen {
         // Dividieren durch 0 nicht möglich
         //System.out.println(2 / 0);
 
+
+        // Unärer Operator
+
+        int x = 1;
+        System.out.println("x = " + x);
+
+        // post-inkrement
+        int y = x++; // zuerst zuweisung zu y (y = 1), dann x um 1 erhöht (x = x + 1)
+        System.out.println("x = " + x); // 2
+        System.out.println("y = " + y); // 1
+
+        x = 1;
+        y = ++x; // zuerst x um 1 erhöht (x = x + 1), dann wurde x zu y zugewiesen (y = 2)
+        System.out.println("x = " + x); // 2
+        System.out.println("y = " + y); // 2
+
+        // analog -- operator
+        int i = 2;
+        int j = i--;
+
+        System.out.println("j = " + j); // erwarten: 2
+        System.out.println("i = " + i); // erwarten: 1
+
+        i = 2;
+        j = --i;
+        System.out.println("j = " + j); // erwarten: 1
+        System.out.println("i = " + i); // erwarten: 1
     }
 }
