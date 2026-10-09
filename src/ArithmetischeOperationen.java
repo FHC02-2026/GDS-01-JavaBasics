@@ -58,5 +58,22 @@ public class ArithmetischeOperationen {
         j = --i;
         System.out.println("j = " + j); // erwarten: 1
         System.out.println("i = " + i); // erwarten: 1
+
+
+        // vergleichsoperatoren
+        int t = 3;
+        int z = 5;
+
+        boolean u = t == z;
+        System.out.println("u = " + u);
+
+        u = t != z;
+        System.out.println("u = " + u);
+
+        u = t < z;
+        System.out.println("u = " + u);
+
+        u = t > z;
+        System.out.println("u = " + u);
     }
 }
