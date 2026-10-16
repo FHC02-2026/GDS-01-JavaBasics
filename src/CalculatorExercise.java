@@ -34,6 +34,9 @@ public class CalculatorExercise {
         printHelper(3, 3, multiply(3, 3), "Multiplikation");
 
         printHelper(number1, number2, divide(number1, number2), "Dividieren");
+
+        // Division durch 0
+        printHelper(number1, 0, divide(number1, 0), "Dividieren");
     }
 
     public static int add(int a, int b) {
@@ -56,7 +59,32 @@ public class CalculatorExercise {
     }
 
     public static double divide(int a, int b) {
+        // Wenn Divisor ungleich 0 ist, dann dividieren, ansonsten 0 retour liefern
+        if (b != 0) {
+            return a / (b * 1.0);
+        } else {
+            return 0;
+        }
+    }
+
+    public static double divide2(int a, int b) {
+        // Wenn Divisor ungleich 0 ist, dann dividieren, ansonsten 0 retour liefern
+        if (b == 0) {
+            System.out.println("Dividieren durch 0 nicht erlaubt");
+            return 0;
+        }
         return a / (b * 1.0);
+    }
+
+    public static double divide3(int a, int b) {
+        // Wenn Divisor ungleich 0 ist, dann dividieren, ansonsten 0 retour liefern
+        double res = 0;
+        if (b == 0) {
+            System.out.println("Dividieren durch 0 nicht erlaubt");
+        } else {
+            res = a / (b * 1.0);
+        }
+        return res;
     }
 
     public static void printHelper(int number1, int number2, int result, String method) {
