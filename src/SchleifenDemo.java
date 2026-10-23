@@ -49,10 +49,24 @@ public class SchleifenDemo {
             // Beim zweiten Aufruf ist i = 2
         }
 
-        while (true) {
-            System.out.println("Yeah");
-            // ????
+        System.out.println("Continue & Break & Return");
+        System.out.println("Beginne while-Schleife:");
+        int c = 0;
+        while (c < 5) {
+            c++;
+            System.out.println("c = " + c);
+            if (c < 2) {
+                System.out.println("Continue");
+                continue;
+            }
+            System.out.println("Nach Continue");
+            //System.out.println("Jetzt break");
+            //break;
+            //System.out.println("Nach break"); -> Compiler schmeißt hier error meldung
+            System.out.println("Jetzt return");
+            return;
         }
+        System.out.println("Aus der Schleife draußen");
 
     }
 }
