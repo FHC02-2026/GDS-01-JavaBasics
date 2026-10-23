@@ -18,5 +18,15 @@ public class FindEven {
             counter++;
         }
 
+        System.out.println("For-Schleife:");
+        // Schreiben wir nur die ungeraden auf die Konsole
+        // 1. initialisieren; 2. Bedingung; 3. modifizieren
+        for (int i = 0; i <= 10; i++) {
+            if (i % 2 != 0) {
+                System.out.println("i = " + i);
+            }
+            // i wird durch for-schleifen modifikation erhöht
+        }
+
     }
 }
