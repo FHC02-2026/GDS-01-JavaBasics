@@ -37,6 +37,10 @@ public class CalculatorExercise {
 
         // Division durch 0
         printHelper(number1, 0, divide(number1, 0), "Dividieren");
+
+        int[] numbers = {1,2,3,4};
+        int res = sum(numbers);
+        System.out.println("res der sum = " + res);;
     }
 
     public static int add(int a, int b) {
@@ -103,6 +107,26 @@ public class CalculatorExercise {
         System.out.println("Input 2: " + number2);
         System.out.println("Resultat: " + result);
         System.out.println("----------------------");
+    }
+
+    public static int sum(int[] numbers) {
+
+//        numbers[0] + numbers[1];
+//        resultat zwischenspeichern;
+//        resultat + numbers[2];
+//        resultat updaten;
+//        wie lange machen wir das so? -> bis wir die numbers.length erreichen;
+//        resultat retour liefern
+
+        //numbers[0] = 2;
+        //numbers[1] = 3;
+
+        int resultat = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            resultat = resultat + numbers[i];
+        }
+
+        return resultat;
     }
 
 }
